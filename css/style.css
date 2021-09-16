@@ -48,11 +48,12 @@ a:hover{
     font-size: large;
     list-style: none;
     padding: 0px 20px ;
+    position: relative;
 }
 
 .nav-list li a{
-    text-decoration: none;
-    color: white;
+    margin-bottom: 20px;
+    color: yellow
 }
 
 .nav-list li a:hover{
@@ -75,7 +76,12 @@ a:hover{
 
 .background{
     /* background: rgba(0, 0, 0, 0.7) url('https://cdn.pixabay.com/photo/2016/06/17/08/56/background-1462869_1280.jpg'); */
-    background: rgba(0, 0, 0, 0.7) url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8eWVsbG93JTIwbXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80');
+    /* background: rgba(255, 123, 0, 0.9) url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8eWVsbG93JTIwbXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80'); */
+    background: rgba(234, 0, 255, 0.527) url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8eWVsbG93JTIwbXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80');
+    /* background: rgba(193, 71, 204, 0.664) url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8eWVsbG93JTIwbXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80'); */
+    /* background: rgba(114, 106, 0, 0.664) url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8eWVsbG93JTIwbXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80'); */
+    /* background: rgba(255, 0, 0, 0.5) url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8eWVsbG93JTIwbXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80'); */
+    /* background: rgba(153, 88, 88, 0.5) url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8eWVsbG93JTIwbXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80'); */
     background-size: cover;
     background-blend-mode:darken;
 
@@ -86,7 +92,7 @@ a:hover{
 }
 
 .box-main{
-    height: 80%;
+    height:80%;
     display:flex;
     justify-content: left;
     align-items: left;
@@ -135,6 +141,20 @@ a:hover{
     background: none;
     color: rgb(255, 228, 119);
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: yellow;
+    height: 100%;
+    width: 0;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
 }
 
 .btn:hover{
@@ -148,6 +168,11 @@ a:hover{
     color: rgb(255, 228, 119);
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.btn:hover span{
+    width: 100%;
+   text-decoration-color: rgb(0, 0, 0);
 }
 
 .btn-dif{
