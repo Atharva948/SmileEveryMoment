@@ -21,7 +21,7 @@ a:hover{
     top: 0;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .logo{
@@ -53,7 +53,8 @@ a:hover{
 
 .nav-list li a{
     margin-bottom: 20px;
-    color: yellow
+    color: yellow;
+    cursor:pointer;    
 }
 
 .nav-list li a:hover{
@@ -134,12 +135,13 @@ a:hover{
 .btn{
     padding: 9px 20px;
     margin: 15px 10px;
-    border: 2px solid rgb(255, 214, 51);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 8px ;
     font-family:fantasy;
     font-size: 16px;
     background: none;
-    color: rgb(255, 228, 119);
+    color: rgb(0, 0, 0);
+    /* color: rgb(255, 228, 119); */
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -160,12 +162,12 @@ span{
 .btn:hover{
     padding: 9px 20px;
     margin: 15px 10px;
-    border: 2px solid rgb(255, 214, 51);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 8px ;
     font-family:fantasy;
     font-size: 16px;
     background: none;
-    color: rgb(255, 228, 119);
+    color: rgb(0, 0, 0);
     cursor: pointer;
     transform: scale(1.1);
 }
