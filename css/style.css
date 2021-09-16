@@ -16,12 +16,13 @@ a:hover{
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     position: sticky;
     top: 0;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
     /* cursor: pointer; */
+    z-index: 1;
 }
 
 .logo{
@@ -200,7 +201,7 @@ span{
 }
 
 .contact{
-    background-color: antiquewhite;
+    background-color: rgb(250, 221, 184);
     height: 90vh;
 }
 
@@ -208,6 +209,12 @@ span{
     text-align: center;
     padding: 30px;
     font-size:xx-large;
+}
+
+.text-footer{
+    text-align: center;
+    font-size:20px;
+    padding: 5px;
 }
 
 .form{
@@ -228,10 +235,12 @@ span{
 .grid{
     margin: auto;
     padding: 10px;
-     display: grid;
-     grid-template-columns: 550px 550px;
-     justify-content: space-around;
+    display: grid;
+    grid-template-columns: 550px 550px;
+    justify-content: space-around;
+    align-items: center;
  }
+
 html{
     scroll-behavior: smooth;
     -webkit-user-select: none;
@@ -248,6 +257,20 @@ html{
     border-radius: 25px;
 }
 
-.VC{
-    margin-bottom: 50px;
+@media only screen and (max-width:1307px){
+    .grid{
+        margin: auto;
+        padding: auto;
+         display: grid;
+         grid-template-columns: 550px;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .nav-list{
+        width: 80%;
+        display: flex;
+        padding: 5px;
+        align-items: center;
+    }
 }
