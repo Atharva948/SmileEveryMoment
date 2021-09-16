@@ -232,13 +232,23 @@ span{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.grid{
+/* .grid{
     margin: auto;
     padding: 10px;
     display: grid;
     grid-template-columns: 550px 550px;
     justify-content: space-around;
     align-items: center;
+ } */
+
+ .grid{
+    /* background-image: linear-gradient(yellow,red);*/
+     margin-top:10px;
+     padding: 0px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content:space-evenly;
+     border-radius: 100px;
  }
 
 html{
